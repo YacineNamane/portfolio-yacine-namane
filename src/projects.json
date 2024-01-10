@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Kasa",
+    "imageSrc": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/Logo.png",
+    "description": " Développement d'une application web SPA (Kasa) ,qui est dans le métier de la location d’appartements entre particuliers ,avec React , React Rooter , Sass .",
+    "githubLink": "https://github.com/YacineNamane/Kasa"
+  },
+  {
+    "id": 2,
+    "title": "Mon Vieux Grimmoire",
+    "imageSrc": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/vieuxgrimmoire.png",
+    "description": "Développement du Back-end  d'un site de notation de livres ( Mon vieux Grimmoire ) et réalisation sécurisée des opérations CRUD avec NodeJS .",
+    "githubLink": "https://github.com/YacineNamane/Mon-Vieux-Grimoire"
+  },
+  {
+    "id": 3,
+    "title": "Booki",
+    "imageSrc": "https://raw.githubusercontent.com/YacineNamane/Booki/main/images/logo/Booki.png",
+    "description": "Mise en place de la page d'accueil d'une agence de voyage ( Booki ) avec HTML & CSS . ",
+    "githubLink": "https://github.com/YacineNamane/Booki"
+  },
+  {
+    "id": 4,
+    "title": "Nina Carducci",
+    "imageSrc": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/portfolio.png",
+    "description": "Débugage et optimisation du portfolio d'une photographe. En s'appuyant sur le rapport de l’audit ,j'ai retravaillé l'accessibilité, la SEO, les perfermances du site ainsi que la résolution de certains bugs liés aux fonctionnalités du site.",
+    "githubLink": "https://github.com/YacineNamane/Nina-Carducci"
+  },
+  {
+    "id": 5,
+    "title": "Sophie Bluel",
+    "imageSrc": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/portfolio.png",
+    "description": "Développement du front-end du portfolio d'une cliente, implémentation d'un formulaire de connexion, création d'une modale pour la gestion de la galerie, et prise en charge des différents événements avec HTML, CSS et JS.",
+    "githubLink": "https://github.com/YacineNamane/Sophie-Bluel"
+  }
+]
