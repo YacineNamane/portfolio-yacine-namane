@@ -42,9 +42,7 @@ const ContactMe = () => {
   return (
     <div className="mecontacter-section" id="Contact">
       <div className="contact-form">
-        <h2>
-          Contactez | <span> moi</span>
-        </h2>
+        <h2>Contactez moi</h2>
         {messageSent ? (
           <div className={`message-sent `}>
             {" "}
@@ -81,11 +79,11 @@ const ContactMe = () => {
         </form>
       </div>
       <div className="mail-contact">
-        <h2>
+        <h3>
           {" "}
           Vous pouvez me contacter directement par mail aussi
           <a href="mailto:yacine.nam@outlook.fr"> ici. </a>{" "}
-        </h2>
+        </h3>
       </div>
     </div>
   );

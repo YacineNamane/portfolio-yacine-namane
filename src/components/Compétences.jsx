@@ -4,9 +4,7 @@ function Compétences() {
   return (
     <div className="skills-container">
       <div className="skills-section">
-        <h2>
-          Pro | <span> Skillset</span>
-        </h2>
+        <h2>Pro Skillset</h2>
       </div>
       <div className="compétence-section">
         {skillsData.proSkills.map((skill, index) => (
@@ -16,9 +14,7 @@ function Compétences() {
         ))}
       </div>
       <div className="skills-section">
-        <h2>
-          Outils | <span> Utilisés </span>
-        </h2>
+        <h2>Outils Utilisés</h2>
       </div>
       <div className="compétence-section">
         {skillsData.tools.map((tool, index) => (
