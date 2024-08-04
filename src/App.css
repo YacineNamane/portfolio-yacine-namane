@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   color: white;
+  background-color: #fff;
 }
 
 /* Banner */
@@ -16,7 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 85px;
-  background-color: white !important;
+  background-color: white;
   z-index: 1000;
 }
 
@@ -118,7 +119,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  animation: floatAnimation 6s ease-in-out infinite; /*la durée de l'animation  */
+  animation: floatAnimation 6s ease-in-out infinite;
 }
 
 @keyframes floatAnimation {
@@ -165,9 +166,9 @@ footer {
   background-color: papayawhip;
 }
 .apropos-section p {
-  text-align: left; /* Alignement du texte à gauche */
-  font-size: 1.1em; /* Ajustement de la taille de police */
-  line-height: 1.6; /* Ajout d'espace entre les lignes pour une meilleure lisibilité */
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.6;
   color: rgb(51, 51, 51);
   margin: 0;
 }
@@ -262,18 +263,17 @@ footer {
 .contact-form textarea {
   height: 200px;
   width: 450px;
-  border-radius: 10px;
   border-color: rgb(171, 60, 81);
   resize: none;
   font-family: "Josefin Sans", sans-serif;
-  color: #5c6ac4;
+  color: rgb(51, 51, 51);
+  padding: 10px;
 }
 .contact-form input {
   height: 40px;
-  border-radius: 10px;
+  color: rgb(51, 51, 51);
   border-color: rgb(171, 60, 81);
   font-family: "Josefin Sans", sans-serif;
-  color: #5c6ac4;
 }
 .contact-form input:focus {
   outline: none;
@@ -299,10 +299,9 @@ footer {
   outline: none;
 }
 .message-sent {
-  color: rgb(171, 60, 81);
-  background-color: aliceblue;
-  border: 2px solid rgb(171, 60, 81);
-  border-radius: 25px;
+  color: rgb(51, 51, 51);
+  background-color: darkseagreen;
+  border: 2px solid aliceblue;
   height: 25px;
   width: 266px;
   margin-top: 30px;
@@ -342,8 +341,8 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* S'assure que la vidéo couvre toute la section */
-  z-index: -1; /* Place la vidéo derrière le contenu */
+  object-fit: cover;
+  z-index: -1;
 }
 
 .projects-container h2 {
@@ -603,7 +602,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+
     width: 100%;
   }
   .nav-mobile-part {

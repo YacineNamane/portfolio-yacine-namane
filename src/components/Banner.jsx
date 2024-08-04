@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+
 function Banner() {
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -16,27 +17,40 @@ function Banner() {
   }, []);
 
   return (
-    <div className="banner" style={{ backgroundColor: getBackgroundColor() }}>
+    <div
+      className="banner"
+      style={{
+        backgroundColor: getBackgroundColor(),
+      }}
+    >
       <div className="logo-section">
-        {" "}
-        <h2>YN</h2>{" "}
+        <h2>YN</h2>
       </div>
       <div className="nav-section">
         <nav>
-          <a href="#Home">Home</a>
-          <a href="#Apropos">A propos</a>
-          <a href="#projects">projets</a>
-          <a href="#Contact"> Me contacter</a>
+          <a href="#Home" style={{ color: getFontColor() }}>
+            Home
+          </a>
+          <a href="#Apropos" style={{ color: getFontColor() }}>
+            A propos
+          </a>
+          <a href="#projects" style={{ color: getFontColor() }}>
+            projets
+          </a>
+          <a href="#Contact" style={{ color: getFontColor() }}>
+            Me contacter
+          </a>
         </nav>
       </div>
     </div>
   );
+
   function getBackgroundColor() {
-    if (scrollPosition > 400) {
-      return "#333 "; // Exemple de couleur de fond pour une certaine position
-    } else {
-      return "transparent"; // Couleur de fond par défaut
-    }
+    return scrollPosition > 900 ? "rgb(51, 51, 51)" : "#fff";
+  }
+
+  function getFontColor() {
+    return scrollPosition > 900 ? "#fff" : "rgb(51, 51, 51)";
   }
 }
 

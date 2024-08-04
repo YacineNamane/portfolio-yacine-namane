@@ -14,7 +14,7 @@ const MobileDropdown = () => {
           <a href="#Home" className="nav-link">
             <FontAwesomeIcon
               icon={faHome}
-              style={{ color: "#fafafa", height: "40px", width: "40px" }}
+              style={{ color: "#fafafa", height: "35px", width: "35px" }}
             />
           </a>
         </div>
@@ -22,7 +22,7 @@ const MobileDropdown = () => {
           <a href="#Apropos" className="nav-link">
             <FontAwesomeIcon
               icon={faUser}
-              style={{ color: "#fafafa", height: "40px", width: "40px" }}
+              style={{ color: "#fafafa", height: "35px", width: "35px" }}
             />
           </a>
         </div>
@@ -34,7 +34,7 @@ const MobileDropdown = () => {
           <a href="#projects" className="nav-link">
             <FontAwesomeIcon
               icon={faScreenpal}
-              style={{ color: "#fafafa", height: "40px", width: "40px" }}
+              style={{ color: "#fafafa", height: "35px", width: "35px" }}
             />
           </a>
         </div>
@@ -42,7 +42,7 @@ const MobileDropdown = () => {
           <a href="#Contact" className="nav-link">
             <FontAwesomeIcon
               icon={farAddressBook}
-              style={{ color: "#fafafa", height: "40px", width: "40px" }}
+              style={{ color: "#fafafa", height: "35px", width: "35px" }}
             />
           </a>
         </div>

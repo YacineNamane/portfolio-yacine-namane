@@ -20,6 +20,7 @@ const ContactMe = () => {
         (result) => {
           console.log(result.text);
           setMessageSent(true);
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -28,13 +29,11 @@ const ContactMe = () => {
   };
 
   useEffect(() => {
-    // Si le message a été envoyé, configurez un délai pour le faire disparaître après 3 secondes
     if (messageSent) {
       const timer = setTimeout(() => {
         setMessageSent(false);
-      }, 3000);
+      }, 2000);
 
-      // Retournez une fonction de nettoyage pour annuler le délai si le composant est démonté avant la fin du délai
       return () => clearTimeout(timer);
     }
   }, [messageSent]);
