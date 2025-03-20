@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio-yacine-namane/static/css/main.0b6ea766.css",
-    "main.js": "/portfolio-yacine-namane/static/js/main.05a8f54d.js",
+    "main.css": "/portfolio-yacine-namane/static/css/main.7e77f59d.css",
+    "main.js": "/portfolio-yacine-namane/static/js/main.26a65baf.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio-yacine-namane/static/js/787.7da95b79.chunk.js",
     "static/media/backgroundprojects.mp4": "/portfolio-yacine-namane/static/media/backgroundprojects.ca732d0f2e733758f8be.mp4",
     "static/media/backgroundskill.png": "/portfolio-yacine-namane/static/media/backgroundskill.0b8eb0010ca8dd34a620.png",
     "static/media/photo.jpg": "/portfolio-yacine-namane/static/media/photo.9a1fae811577d81e6f60.jpg",
     "static/media/aboutimg.png": "/portfolio-yacine-namane/static/media/aboutimg.5652077d12ea33c4bbb6.png",
     "index.html": "/portfolio-yacine-namane/index.html",
-    "main.0b6ea766.css.map": "/portfolio-yacine-namane/static/css/main.0b6ea766.css.map",
-    "main.05a8f54d.js.map": "/portfolio-yacine-namane/static/js/main.05a8f54d.js.map",
+    "main.7e77f59d.css.map": "/portfolio-yacine-namane/static/css/main.7e77f59d.css.map",
+    "main.26a65baf.js.map": "/portfolio-yacine-namane/static/js/main.26a65baf.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio-yacine-namane/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b6ea766.css",
-    "static/js/main.05a8f54d.js"
+    "static/css/main.7e77f59d.css",
+    "static/js/main.26a65baf.js"
   ]
 }
