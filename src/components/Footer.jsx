@@ -38,7 +38,7 @@ function Footer() {
         </a>
       </div>
       <div className="rights">
-        <p>© 2023 Yacine Namane | Tous droits réservés.</p>
+        <p>© 2025 Yacine Namane | Tous droits réservés.</p>
       </div>
     </footer>
   );

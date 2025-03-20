@@ -1,5 +1,19 @@
 [
   {
+    "id": 6,
+    "title": "utopiadreams",
+    "imageSrc": "https://raw.githubusercontent.com/YacineNamane/utopiadreams/master/src/assets/UDImages/UtopiaDreams.png",
+    "description": "J'ai développé UtopiaDreams, un site web de fonds d'écran mobile, entièrement réalisé en React.js. Ce projet s’est concentré sur une expérience utilisateur fluide et réactive, en offrant une interface moderne et un accès à des fonds d'écran de qualité.",
+    "githubLink": "https://utopiadreams.art/"
+  },
+  {
+    "id": 7,
+    "title": "Annaperla",
+    "imageSrc": "https://raw.githubusercontent.com/YacineNamane/Personnel-usage/master/src/assets/images/LogoAP.png",
+    "description": "J'ai développé un site web complet pour un client, incluant un espace administrateur sécurisé et un blog dynamique. Le projet a été réalisé de A à Z, en intégrant une architecture robuste et une gestion avancée des droits d'accès.",
+    "githubLink": "https://github.com/YacineNamane/Personnel-usage"
+  },
+  {
     "id": 1,
     "title": "Kasa",
     "imageSrc": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/Logo.png",

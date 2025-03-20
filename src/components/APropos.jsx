@@ -6,7 +6,9 @@ function APropos() {
   return (
     <div className="apropos-section" id="Apropos">
       <div className="apropos-header">
-        <h2> A Propos</h2>
+        <h2>
+          <span> A Propos</span>
+        </h2>
         <div className="about-illustration">
           <img src={AboutImg} alt="learn more about me " />
         </div>

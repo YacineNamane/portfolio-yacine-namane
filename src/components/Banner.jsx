@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Banner() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -20,7 +19,9 @@ function Banner() {
     <div
       className="banner"
       style={{
-        backgroundColor: getBackgroundColor(),
+        backgroundColor:
+          scrollPosition < 900 ? "transparent" : "rgb(51, 51, 51)",
+        transition: "background-color 0.3s ease-in-out",
       }}
     >
       <div className="logo-section">
@@ -28,30 +29,46 @@ function Banner() {
       </div>
       <div className="nav-section">
         <nav>
-          <a href="#Home" style={{ color: getFontColor() }}>
+          <a
+            href="#Home"
+            style={{
+              color: scrollPosition > 900 ? "#fff" : "rgb(231 171 171)",
+              transition: "all 0.3s ease-in-out",
+            }}
+          >
             Home
           </a>
-          <a href="#Apropos" style={{ color: getFontColor() }}>
+          <a
+            href="#Apropos"
+            style={{
+              color: scrollPosition > 900 ? "#fff" : "rgb(231 171 171)",
+              transition: "all 0.3s ease-in-out",
+            }}
+          >
             A propos
           </a>
-          <a href="#projects" style={{ color: getFontColor() }}>
+          <a
+            href="#projects"
+            style={{
+              color: scrollPosition > 900 ? "#fff" : "rgb(231 171 171)",
+              transition: "all 0.3s ease-in-out",
+            }}
+          >
             projets
           </a>
-          <a href="#Contact" style={{ color: getFontColor() }}>
+          <a
+            href="#Contact"
+            style={{
+              color: scrollPosition > 900 ? "#fff" : "rgb(231 171 171)",
+              transition: "all 0.3s ease-in-out",
+            }}
+          >
             Me contacter
           </a>
         </nav>
       </div>
     </div>
   );
-
-  function getBackgroundColor() {
-    return scrollPosition > 900 ? "rgb(51, 51, 51)" : "#fff";
-  }
-
-  function getFontColor() {
-    return scrollPosition > 900 ? "#fff" : "rgb(51, 51, 51)";
-  }
 }
 
 export default Banner;
