@@ -1,21 +1,36 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-function Type() {
+const TypewriterText = () => {
   return (
-    <Typewriter
-      options={{
-        strings: [
-          "Bonjour !",
-          "je suis Yacine Namane ",
-          "Développeur Web",
-          "Freelancer",
-        ],
-        autoStart: true,
-        loop: true,
-        deleteSpeed: 50,
-      }}
-    />
+    <div className="welcome-section">
+      <div className="welcome-section-title">
+        {" "}
+        <span> Hello,</span> <br />{" "}
+        <h1>
+          {" "}
+          Je Suis Yacine <br />
+          Developpeur Web
+        </h1>
+      </div>
+      <Typewriter
+        options={{
+          autoStart: true,
+          delay: 150,
+        }}
+        onInit={(typewriter) => {
+          typewriter
+            .typeString(
+              '<br/><span class="typewriter-text">Front End Developer -</span>'
+            )
+            .pauseFor(900)
+            .typeString('<br/><span class="typewriter-text">React JS</span>')
+            .pauseFor(900)
+            .start();
+        }}
+      />
+    </div>
   );
-}
-export default Type;
+};
+
+export default TypewriterText;

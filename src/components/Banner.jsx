@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import YNLogo from "../images/LogoYN.jpg";
 
 function Banner() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -24,46 +25,47 @@ function Banner() {
         transition: "background-color 0.3s ease-in-out",
       }}
     >
-      <div className="logo-section">
-        <h2>YN</h2>
+      <div className="logo-container">
+        <img src={YNLogo} alt="Yacine Namane Logo" />
       </div>
+
       <div className="nav-section">
         <nav>
           <a
             href="#Home"
             style={{
-              color: scrollPosition > 900 ? "#fff" : "rgb(231 171 171)",
+              color: scrollPosition > 900 ? "#fff" : "rgb(77 75 75)",
               transition: "all 0.3s ease-in-out",
             }}
           >
-            Home
+            <span>Home</span>
           </a>
           <a
             href="#Apropos"
             style={{
-              color: scrollPosition > 900 ? "#fff" : "rgb(231 171 171)",
+              color: scrollPosition > 900 ? "#fff" : "rgb(77 75 75)",
               transition: "all 0.3s ease-in-out",
             }}
           >
-            A propos
+            <span>About</span>
           </a>
           <a
             href="#projects"
             style={{
-              color: scrollPosition > 900 ? "#fff" : "rgb(231 171 171)",
+              color: scrollPosition > 900 ? "#fff" : "rgb(77 75 75)",
               transition: "all 0.3s ease-in-out",
             }}
           >
-            projets
+            <span>Projets</span>
           </a>
           <a
             href="#Contact"
             style={{
-              color: scrollPosition > 900 ? "#fff" : "rgb(231 171 171)",
+              color: scrollPosition > 900 ? "#fff" : "rgb(77 75 75)",
               transition: "all 0.3s ease-in-out",
             }}
           >
-            Me contacter
+            <span>Contact</span>
           </a>
         </nav>
       </div>

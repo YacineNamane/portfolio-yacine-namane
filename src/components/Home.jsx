@@ -1,5 +1,3 @@
-import React from "react";
-import FloatingImage from "../Effects/ImageFloat";
 import Type from "../Effects/Type";
 function Home() {
   return (
@@ -8,9 +6,6 @@ function Home() {
         <h1 className="type-container">
           <Type />
         </h1>
-      </div>
-      <div className="img-apropos">
-        <FloatingImage />
       </div>
     </div>
   );

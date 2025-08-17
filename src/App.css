@@ -1,5 +1,5 @@
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   color: white;
@@ -11,36 +11,53 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 85px;
+  flex-direction: column;
+  height: 960px;
   background: transparent;
   z-index: 1000;
+}
+.nav-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  background: #121212;
 }
 
 .banner nav {
   display: flex;
-  flex-direction: row;
-  gap: 30px;
-  padding-right: 20px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #8080804d;
 }
 
 .banner nav a {
   text-decoration: none;
   color: rgb(51, 51, 51);
+  border-top: 1px solid #8080804d;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
+  height: 60px;
+  width: 100%;
   font-size: 1.2em;
-  font-weight: bold;
-  padding-left: 22px;
+  font-weight: 100;
+  letter-spacing: 3px;
   transition: all 0.2s ease;
 }
-.banner nav a:hover {
-  color: #5c6ac4 !important;
-  transform: scale(1.1);
+.banner nav a span {
+  transition: all 0.3s ease;
+}
+.banner nav a span:hover {
+  color: #f7f7f7e6 !important;
+  transform: scale(1.05);
 }
 .svg-inline--fa {
   height: 0.9em;
@@ -56,10 +73,22 @@ body {
   font-size: 25px;
   padding-left: 20px;
 }
-#logoyn {
-  width: 90px;
-  height: 85px;
-  color: #35247b;
+.logo-container {
+  background: #2b2b2b;
+  height: 20%;
+  width: 100%;
+}
+.logo-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.text-en-boucle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
 }
 
 /* Fade */
@@ -79,22 +108,35 @@ body {
 /* home */
 .home-section {
   display: flex;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(24, 0, 16, 1) 80%,
-    rgb(26 0 35) 100%
-  );
   height: 100vh;
+  background-image: url("images/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   align-items: center;
   justify-content: space-between;
 }
 
-.text-en-boucle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+.welcome-section-title span {
+  font-size: 2em !important;
+  font-weight: 600;
+  margin: 0;
+  line-height: 0.2;
+  background: linear-gradient(90deg, #f944ea, #a75af1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.typewriter-text {
+  color: #888; /* gris */
+  font-weight: 300; /* plus fin */
+  font-size: 1.8rem; /* optionnel : réduire un peu la taille */
+  letter-spacing: 4px;
+}
+h1 {
+  font-size: 2.3em !important;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
 }
 
 .img-apropos {
