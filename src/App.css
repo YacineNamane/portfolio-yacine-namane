@@ -87,7 +87,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
@@ -121,7 +121,7 @@ body {
   font-size: 2em !important;
   font-weight: 600;
   margin: 0;
-  line-height: 0.2;
+  line-height: 1.2;
   background: linear-gradient(90deg, #f944ea, #a75af1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -133,9 +133,9 @@ body {
   letter-spacing: 4px;
 }
 h1 {
-  font-size: 2.3em !important;
+  font-size: 2.2em !important;
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1.3;
   margin: 0;
 }
 
@@ -152,30 +152,66 @@ h1 {
   padding: 50px;
 }
 
-/* float */
-.floating-image-container {
+/*Project Demo*/
+.demo-container {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 100%;
 }
 
-.floating-image {
-  position: absolute;
+.background-gif {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  border-radius: 100%;
-  animation: floatAnimation 6s ease-in-out infinite;
+  object-fit: cover;
+  z-index: 1;
 }
 
-@keyframes floatAnimation {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
+.slide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  gap: 30px;
+}
+
+.text h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.images {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.images img {
+  max-width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+/* Animation initiale pour GSAP */
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 /* Footer */
