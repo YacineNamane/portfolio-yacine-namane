@@ -1,5 +1,5 @@
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Mona Sans", sans-serif;
   margin: 0;
   padding: 0;
   color: white;
@@ -74,7 +74,7 @@ body {
   padding-left: 20px;
 }
 .logo-container {
-  background: #2b2b2b;
+  background: #020202;
   height: 20%;
   width: 100%;
 }
@@ -127,9 +127,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .typewriter-text {
-  color: #888; /* gris */
-  font-weight: 300; /* plus fin */
-  font-size: 1.8rem; /* optionnel : réduire un peu la taille */
+  color: #888;
+  font-weight: 300;
+  font-size: 1.8rem;
   letter-spacing: 4px;
 }
 h1 {
@@ -160,16 +160,16 @@ h1 {
 
 .background-gif {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
-  z-index: 1;
+  z-index: -1;
 }
 
 .slide {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,14 +180,20 @@ h1 {
   gap: 30px;
 }
 
+.text {
+  margin-bottom: 50px;
+}
+
 .text h2 {
   font-size: 3rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .text p {
   font-size: 1.5rem;
-  color: #ccc;
+  color: #ddd;
+  max-width: 465px;
+  margin: 0 auto;
 }
 
 .images {
@@ -195,17 +201,35 @@ h1 {
   gap: 25px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .images img {
-  max-width: 200px;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
+  max-width: 305px;
+  height: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  object-fit: contain;
+  position: relative;
+  border: 1px solid #ffffff33;
 }
 
+.images img:nth-child(1) {
+  top: -175px;
+  right: 130px;
+}
+
+.images img:nth-child(2) {
+  top: 200px;
+}
+
+.images img:nth-child(3) {
+  top: -120px;
+  left: 170px;
+}
 .images img:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
 /* Animation initiale pour GSAP */
