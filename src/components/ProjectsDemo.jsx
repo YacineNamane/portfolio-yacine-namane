@@ -50,9 +50,8 @@ const ProjectsDemo = () => {
 
   return (
     <div className="demo-container" style={{ position: "relative" }}>
-      <img
+      <div
         className="background-gif"
-        alt="bg management"
         style={{
           position: "fixed",
           background: "#141313",
@@ -63,10 +62,10 @@ const ProjectsDemo = () => {
           objectFit: "cover",
           zIndex: -1,
         }}
-      />
+      ></div>
 
       <div
-        className="slide"
+        className="slide-project"
         style={{ padding: "120px 0", textAlign: "center" }}
       >
         <div className="text">
@@ -91,7 +90,7 @@ const ProjectsDemo = () => {
       </div>
 
       <div
-        className="slide"
+        className="slide-project"
         style={{ padding: "120px 0", textAlign: "center" }}
       >
         <div className="text">
