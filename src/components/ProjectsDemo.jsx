@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ProjectsDemo = () => {
   useEffect(() => {
-    const slides = document.querySelectorAll(".slide");
+    const slides = document.querySelectorAll(".slide-project");
 
     slides.forEach((slide) => {
       const images = slide.querySelectorAll(".images img");

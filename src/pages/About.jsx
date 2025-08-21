@@ -1,10 +1,10 @@
-import Banner from "../components/Banner";
+import DefaultHeader from "../components/DefaultBanner";
 import SkillsDistortion from "../components/SkillsDistortion";
 
 const About = () => {
   return (
     <div>
-      <Banner />
+      <DefaultHeader />
       <SkillsDistortion />
     </div>
   );

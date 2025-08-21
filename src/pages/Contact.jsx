@@ -1,9 +1,9 @@
-import Banner from "../components/Banner";
+import DefaultHeader from "../components/DefaultBanner";
 
 const Contact = () => {
   return (
     <div>
-      <Banner />
+      <DefaultHeader />
     </div>
   );
 };
