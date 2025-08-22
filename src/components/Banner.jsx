@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import YNLogo from "../images/LogoYN.webp";
+import YNLogo from "../images/YNLogo.svg";
 import "../App.css";
 
 function Banner() {

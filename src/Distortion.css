@@ -252,6 +252,26 @@ footer {
   background-color: #ffe600;
   opacity: 0;
 }
+.skills-title-container {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.skills-title-container h2 {
+  font-size: 3em !important;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #f944ea, #a75af1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @keyframes fadeIn {
   0% {

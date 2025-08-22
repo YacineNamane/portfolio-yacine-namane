@@ -2,19 +2,9 @@ import React, { useEffect } from "react";
 import skillsData from "../skills.json";
 import "../Distortion.css";
 import * as THREE from "three";
-import { Pane } from "tweakpane";
 
 export default function SkillsDistortion() {
-  // Partie 2 → Le HTML transformé en JSX (structure identique au CodePen)
-  // -------------------------------------------------------------------
   useEffect(() => {
-    // Partie 3 → Le JavaScript original intégré dans le composant React (useEffect)
-    // --------------------------------------------------------------------------------
-    // *** IMPORTANT ***
-    // Le code ci-dessous est un port "au plus identique" du CodePen d'origine,
-    // en gardant la même logique, les mêmes options, les mêmes listeners, etc.
-    // La SEULE différence : on remplace les URLs d'images par tes logos de skills.json.
-
     // --- Préloader -----------------------------------------------------
     const createPreloader = () => {
       const container = document.querySelector(".circle-container");
@@ -64,7 +54,7 @@ export default function SkillsDistortion() {
         }
       }
 
-      const totalAnimationTime = 5000; // 5s
+      const totalAnimationTime = 5000;
       const progressUpdateInterval = 50;
       let startTime = Date.now();
 
@@ -119,7 +109,6 @@ export default function SkillsDistortion() {
       return allDots;
     };
 
-    // Lance le préloader tout de suite
     createPreloader();
 
     // --- Particules d'arrière-plan ------------------------------------
@@ -169,12 +158,11 @@ export default function SkillsDistortion() {
     scene.add(directionalLight);
 
     // --- Slides & settings --------------------------------------------
-    const slideWidth = 2;
-    const slideHeight = 1.2;
+    const slideWidth = 1.5;
+    const slideHeight = 0.6;
     const gap = 0.25;
-    const slideCount = 10;
+    const slideCount = 12;
 
-    // ⚠️ On remplace ICI les images d'origine par tes logos skills.json
     const skills = [
       ...(skillsData?.proSkills || []),
       ...(skillsData?.tools || []),
@@ -212,85 +200,6 @@ export default function SkillsDistortion() {
       directionChangeThreshold: 0.02,
       directionSmoothing: 0.03,
     };
-
-    // Tweakpane (identique au CodePen)
-    const pane = new Pane();
-    const distortionFolder = pane.addFolder({ title: "Distortion" });
-    distortionFolder.addBinding(settings, "maxDistortion", {
-      min: 1.0,
-      max: 10.0,
-    });
-    distortionFolder.addBinding(settings, "distortionSensitivity", {
-      min: 0.1,
-      max: 1.0,
-    });
-    distortionFolder.addBinding(settings, "distortionDecay", {
-      min: 0.8,
-      max: 0.99,
-    });
-    distortionFolder.addBinding(settings, "distortionSmoothing", {
-      min: 0.01,
-      max: 0.2,
-    });
-    distortionFolder.addBinding(settings, "distortionIntensity", {
-      min: 0.0,
-      max: 1.0,
-    });
-    distortionFolder.addBinding(settings, "horizontalDistortionDamping", {
-      min: 0.0,
-      max: 1.0,
-    });
-    distortionFolder.addBinding(settings, "momentumDistortionBoost", {
-      min: 0.0,
-      max: 1.0,
-    });
-    distortionFolder.addBinding(settings, "directionInfluence", {
-      min: 0.0,
-      max: 1.0,
-    });
-    distortionFolder.addBinding(settings, "waveAmplitudeBoost", {
-      min: 0.0,
-      max: 1.0,
-    });
-    distortionFolder.addBinding(settings, "directionChangeThreshold", {
-      min: 0.0,
-      max: 0.1,
-    });
-    distortionFolder.addBinding(settings, "directionSmoothing", {
-      min: 0.01,
-      max: 0.2,
-    });
-
-    const controlsFolder = pane.addFolder({ title: "Controls" });
-    controlsFolder.addBinding(settings, "wheelSensitivity", {
-      min: 0.001,
-      max: 0.05,
-    });
-    controlsFolder.addBinding(settings, "touchSensitivity", {
-      min: 0.001,
-      max: 0.05,
-    });
-    controlsFolder.addBinding(settings, "momentumMultiplier", {
-      min: 0.5,
-      max: 5.0,
-    });
-
-    const effectsFolder = pane.addFolder({ title: "Effects" });
-    effectsFolder.addBinding(settings, "rotationFactor", {
-      min: 0.0,
-      max: 0.5,
-    });
-    effectsFolder.addBinding(settings, "animationSpeed", {
-      min: 0.1,
-      max: 2.0,
-    });
-    effectsFolder.addBinding(settings, "textFadeStart", { min: 0.0, max: 5.0 });
-    effectsFolder.addBinding(settings, "textFadeEnd", { min: 0.0, max: 5.0 });
-    effectsFolder.addBinding(settings, "textMaxBlur", { min: 0, max: 20 });
-
-    distortionFolder.expanded = false;
-    controlsFolder.expanded = false;
-    effectsFolder.expanded = false;
 
     // --- Slides + Titres (identiques) ---------------------------------
     const slides = [];
@@ -794,14 +703,12 @@ export default function SkillsDistortion() {
       window.removeEventListener("touchmove", onTouchMove);
       window.removeEventListener("touchend", onTouchEnd);
       window.removeEventListener("resize", onResize);
-      pane.dispose();
       renderer.dispose();
     };
   }, []);
 
   return (
     <>
-      {/* Partie 2 → HTML du CodePen converti en JSX */}
       <div className="preloader">
         <div className="circle-container"></div>
         <div className="initializing-text-container">
@@ -813,6 +720,12 @@ export default function SkillsDistortion() {
         <p>DRAG TO EXPLORE</p>
       </footer>
       <div className="particles" id="particles"></div>
+      <div className="skills-title-container text-center py-6">
+        <h2 className="text-3xl md:text-4xl font-bold tracking-wide">
+          Skill-Set & Tools
+        </h2>
+      </div>
+
       <div id="titles-container"></div>
       <canvas id="canvas"></canvas>
     </>
