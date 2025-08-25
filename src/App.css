@@ -20,7 +20,8 @@ body {
   padding: 0 40px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 9999;
 }
 
@@ -179,7 +180,7 @@ body {
   justify-content: center;
   align-items: flex-end;
   height: 100vh;
-  width: 100%;
+  width: 85%;
 }
 
 /* Fade */
@@ -241,6 +242,7 @@ h1 {
   text-align: left;
   font-size: 30px;
   padding: 50px;
+  height: 520px;
 }
 
 /*Project Demo*/
@@ -272,54 +274,44 @@ h1 {
 }
 
 .text {
-  margin-bottom: 50px;
+  position: absolute;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 250px;
+  text-align: left;
 }
 
 .text h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .text p {
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   color: #ddd;
   max-width: 465px;
   margin: 0 auto;
+  text-align: left;
+  text-transform: lowercase;
+  font-weight: 100;
 }
 
-.images {
-  display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+.slide-project .image-wrapper {
+  position: absolute;
 }
 
-.images img {
-  max-width: 305px;
+.slide-project .image-wrapper img {
   height: auto;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
-  object-fit: contain;
-  position: relative;
   border: 1px solid #ffffff33;
+  transition: transform 0.5s ease;
 }
 
-.images img:nth-child(1) {
-  top: -175px;
-  right: 130px;
-}
-
-.images img:nth-child(2) {
-  top: 200px;
-}
-
-.images img:nth-child(3) {
-  top: -120px;
-  left: 170px;
-}
-.images img:hover {
-  transform: scale(1.2);
+.slide-project .image-wrapper img:hover {
+  transform: scale(1.1);
   transition: transform 0.3s ease;
 }
 
