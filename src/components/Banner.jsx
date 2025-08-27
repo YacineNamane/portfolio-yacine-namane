@@ -1,6 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import YNLogo from "../images/YNLogo.svg";
+import In from "../images/linkedin.svg";
+import X from "../images/twitter.svg";
+import Gh from "../images/github.svg";
 import "../App.css";
 
 function Banner() {
@@ -49,6 +52,49 @@ function Banner() {
             <span>Contact</span>
           </NavLink>
         </nav>
+      </div>
+      <div className="flex justify-center items-center w-full bg-[#121212] py-4 gap-6 h-17p">
+        <div className="w-5 h-5 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={In}
+              alt="LinkedIn"
+              className="h-full w-full object-contain"
+            />
+          </a>
+        </div>
+
+        <div className="w6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={X}
+              alt="Twitter"
+              className="h-full w-full object-contain"
+            />
+          </a>
+        </div>
+
+        <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={Gh}
+              alt="GitHub"
+              className="h-full w-full object-contain"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ export default function SkillsDistortion() {
       centerDot.style.height = "8px";
       centerDot.style.left = "calc(50% - 4px)";
       centerDot.style.top = "calc(50% - 4px)";
-      centerDot.style.backgroundColor = "#ffe600";
+      centerDot.style.backgroundColor = "#f944ea";
       centerDot.style.animation = "pulse 1.5s infinite ease-in-out";
       centerDot.style.opacity = "1";
       container.appendChild(centerDot);

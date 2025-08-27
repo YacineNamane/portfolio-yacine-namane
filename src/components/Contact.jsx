@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
+import Illustration from "../images/Man'sDream.png";
 
 const ContactMe = () => {
   const form = useRef();
@@ -41,14 +42,19 @@ const ContactMe = () => {
   return (
     <div className="mecontacter-section" id="Contact">
       <div className="contact-form">
-        <h2>Contactez moi</h2>
-        {messageSent ? (
-          <div className={`message-sent `}>
-            {" "}
-            <p>Message envoyé avec succès !</p>
-          </div>
-        ) : null}
-        <form name="contact-form-YN" ref={form} onSubmit={sendEmail}>
+        <form
+          name="contact-form-YN"
+          id="from-container"
+          ref={form}
+          onSubmit={sendEmail}
+        >
+          <h2>Contactez moi</h2>
+          {messageSent ? (
+            <div className={`message-sent `}>
+              {" "}
+              <p>Message envoyé .</p>
+            </div>
+          ) : null}
           <div>
             <label>
               Nom
@@ -76,12 +82,25 @@ const ContactMe = () => {
             </button>
           </div>
         </form>
+        <div className="motivation-section">
+          <span>
+            En tant que Développeur Web Junior , Rigoureux , autonome et ayant
+            une solide capacité d'adaptation, je recherche aujourd'hui un
+            environnement professionnel dans lequel je pourrais contribuer
+            activement, partager mes compétences mais aussi continuer à
+            apprendre auprès de développeurs expérimentés, dans une vraie
+            dynamique d’écoute et d’échange. Intégrer une entreprise , c’est
+            pour moi l’occasion de découvrir le métier dans toute sa richesse
+            ...{" "}
+          </span>
+          <img src={Illustration} alt="Man's Dream Never Die ! One Piece Ref" />
+        </div>
       </div>
       <div className="mail-contact">
         <h3>
           {" "}
           Vous pouvez me contacter directement par mail aussi
-          <a href="mailto:yacine.nam@outlook.fr"> ici. </a>{" "}
+          <a href="mailto:yacine.nam@outlook.fr"> ici . </a>{" "}
         </h3>
       </div>
     </div>

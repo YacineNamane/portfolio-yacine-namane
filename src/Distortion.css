@@ -193,7 +193,7 @@ footer {
   display: block;
   width: 40px;
   height: 3px;
-  background-color: #ffe600;
+  background-color: #f944ea;
   margin-right: 10px;
 }
 
@@ -240,7 +240,7 @@ footer {
   left: 0;
   height: 100%;
   width: 0%;
-  background-color: #ffe600;
+  background-color: #f944ea;
   z-index: 1;
 }
 
@@ -249,7 +249,7 @@ footer {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #ffe600;
+  background-color: #f944ea;
   opacity: 0;
 }
 .skills-title-container {
