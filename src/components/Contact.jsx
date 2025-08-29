@@ -93,7 +93,11 @@ const ContactMe = () => {
             pour moi l’occasion de découvrir le métier dans toute sa richesse
             ...{" "}
           </span>
-          <img src={Illustration} alt="Man's Dream Never Die ! One Piece Ref" />
+          <img
+            src={Illustration}
+            alt="Man's Dream Never Die ! One Piece Ref"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="mail-contact">

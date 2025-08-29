@@ -34,7 +34,7 @@ function Banner() {
             <span>About</span>
           </NavLink>
           <NavLink
-            to="/projects"
+            to="/project"
             style={({ isActive }) => ({
               color: isActive ? "#fff" : "rgb(92 92 92 / 71%)",
               transition: "all 0.3s ease-in-out",

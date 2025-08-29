@@ -123,7 +123,7 @@ function DefaultHeader() {
             <NavLink to="/about" onClick={() => setMenuOpen(false)}>
               About
             </NavLink>
-            <NavLink to="/projects" onClick={() => setMenuOpen(false)}>
+            <NavLink to="/project" onClick={() => setMenuOpen(false)}>
               Projects
             </NavLink>
             <NavLink to="/contact" onClick={() => setMenuOpen(false)}>

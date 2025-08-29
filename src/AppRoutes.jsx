@@ -10,6 +10,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Project from "./pages/Project";
+import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
 function AnimatedRoutes() {
@@ -27,13 +28,22 @@ function AnimatedRoutes() {
           }
         />
         <Route
-          path="/Projects"
+          path="/Project"
           element={
             <PageWrapper>
               <Project />
             </PageWrapper>
           }
         />
+        <Route
+          path="/Projects"
+          element={
+            <PageWrapper>
+              <Projects />
+            </PageWrapper>
+          }
+        />
+
         <Route
           path="/About"
           element={

@@ -8,10 +8,17 @@
   },
   {
     "id": 7,
-    "title": "Annaperla",
+    "title": "Anna Perla",
     "imageSrc": "https://raw.githubusercontent.com/YacineNamane/Personnel-usage/master/src/assets/images/LogoAP.png",
     "description": "J'ai développé un site web complet pour un client, incluant un espace administrateur sécurisé et un blog dynamique. Le projet a été réalisé de A à Z, en intégrant une architecture robuste et une gestion avancée des droits d'accès.",
     "githubLink": "https://github.com/YacineNamane/Personnel-usage"
+  },
+  {
+    "id": 8,
+    "title": "winlytics Draft lol",
+    "imageSrc": "https://raw.githubusercontent.com/YacineNamane/winlytics-draft-lol/main/src/assets/WDL.png",
+    "description": "Winlytics Draft est un outil d’analyse de draft pour League of Legends qui calcule le taux de victoire moyen d’une équipe en fonction des champions sélectionnés. En s’appuyant sur l’API de Riot, il fournit des statistiques en temps réel sur les probabilités de victoire, aidant ainsi les joueurs à prendre de meilleures décisions stratégiques et à optimiser leurs compositions d’équipe.",
+    "githubLink": "https://github.com/YacineNamane/winlytics-draft-lol"
   },
   {
     "id": 1,
