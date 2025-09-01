@@ -39,53 +39,55 @@ function DefaultHeader() {
   }, [messageSent]);
 
   return (
-    <div className="default-header flex items-center justify-between px-6 py-4  text-white relative">
+    <div className="default-header flex items-center justify-between px-3 sm:px-4 md:px-6 py-3 text-white relative gap-2">
       {/* Logo */}
-      <div className="dbl-secction flex items-center gap-2">
-        <img src={YNLogo} alt="Yacine Logo" className="h-10" />
+      <div className="dbl-secction flex-shrink-0">
+        <img src={YNLogo} alt="Yacine Logo" className="h-8 sm:h-9 md:h-10" />
       </div>
 
       {/* Formulaire intégré */}
-      <div className="idea-section flex-1 max-w-xl mx-6">
-        <form ref={form} onSubmit={sendEmail} className="flex items-center">
+      <div className="idea-section flex-1 mx-2 sm:mx-4 md:mx-6">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="flex items-center w-full"
+        >
           <input
             type="text"
             name="message"
-            placeholder="Vous avez un projet ? Décrivez-le ici..."
-            className="flex-1 px-4 py-2 rounded-l-full bg-gray-800 text-gray-300 placeholder-gray-500 focus:outline-none"
+            placeholder="Vous avez un projet ? Décrivez-le ici.."
+            className="flex-1 px-2 sm:px-3 md:px-4 py-2 rounded-l-full bg-gray-800 text-gray-300 placeholder-gray-500 text-xs sm:text-sm md:text-base focus:outline-none"
           />
           <button
             type="submit"
-            className="px-6 py-2 rounded-r-full bg-white text-black font-semibold hover:bg-gray-200 transition"
+            className="px-3 sm:px-4 md:px-6 py-2 rounded-r-full bg-white text-black font-semibold text-xs sm:text-sm md:text-base hover:bg-gray-200 transition"
           >
             Envoyer
           </button>
         </form>
         {messageSent && (
-          <p className="text-green-400 text-sm mt-2">Message envoyé ✅</p>
+          <p className="text-green-400 text-xs sm:text-sm mt-1">
+            Message envoyé ✅
+          </p>
         )}
       </div>
 
       {/* Wrapper du Menu Burger */}
-      <div className="relative">
+      <div className="relative flex-shrink-0">
         <div
-          className="menu-section flex items-center gap-2 cursor-pointer"
+          className="menu-section flex items-center gap-1 sm:gap-2 cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <span className="text-white font-medium">Menu</span>
+          <span className="text-white font-medium hidden sm:block">Menu</span>
           {menuOpen ? (
-            // SVG Close
             <svg
-              className="w-6 h-6 text-gray-800 dark:text-white transition-transform duration-300 rotate-90"
-              aria-hidden="true"
+              className="w-6 h-6 text-white transition-transform duration-300 rotate-90"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
               fill="none"
               viewBox="0 0 24 24"
+              stroke="currentColor"
             >
               <path
-                stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
@@ -93,18 +95,14 @@ function DefaultHeader() {
               />
             </svg>
           ) : (
-            // SVG Menu
             <svg
-              className="w-6 h-6 text-gray-800 dark:text-white transition-transform duration-300 rotate-0"
-              aria-hidden="true"
+              className="w-6 h-6 text-white transition-transform duration-300"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
               fill="none"
               viewBox="0 0 24 24"
+              stroke="currentColor"
             >
               <path
-                stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
@@ -116,7 +114,7 @@ function DefaultHeader() {
 
         {/* Menu déroulant */}
         {menuOpen && (
-          <div className="absolute top-full mt-2 w-40 flex flex-col border border-white  p-2 bg-transparent z-50">
+          <div className="absolute top-full right-0 mt-2 w-36 sm:w-40 flex flex-col border border-white p-2 bg-black bg-opacity-80 z-50">
             <NavLink to="/" onClick={() => setMenuOpen(false)}>
               Home
             </NavLink>

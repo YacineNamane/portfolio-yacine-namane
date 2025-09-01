@@ -24,6 +24,24 @@ function ProjectsSet() {
                 <FontAwesomeIcon icon={faGithub} /> Github
               </a>
             </div>
+            <div className="project-tags">
+              {project.tags?.slice(0, 4).map((tag, index) => (
+                <span key={index} className="tag">
+                  <span
+                    className="tag-dot"
+                    style={{
+                      display: "inline-block",
+                      width: "10px",
+                      height: "10px",
+                      borderRadius: "50%",
+                      backgroundColor: tag.color,
+                      marginRight: "6px",
+                    }}
+                  ></span>
+                  {tag.label}
+                </span>
+              ))}
+            </div>
           </div>
         ))}
       </div>

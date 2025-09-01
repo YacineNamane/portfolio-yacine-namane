@@ -56,7 +56,7 @@ const projectData = [
     ],
   },
   {
-    title: "Winlytics Draft",
+    title: "Winlytics Draft LOL",
     description:
       "Winlytics Draft est un outil d’analyse de draft pour League of Legends qui calcule le taux de victoire moyen d’une équipe en fonction des champions sélectionnés. En s’appuyant sur l’API de Riot, il fournit des statistiques en temps réel sur les probabilités de victoire, aidant ainsi les joueurs à prendre de meilleures décisions stratégiques et à optimiser leurs compositions d’équipe",
     images: [
@@ -123,8 +123,8 @@ const ProjectsDemo = () => {
         duration: 1.2,
         scrollTrigger: {
           trigger: ".slide-rideau",
-          start: "top 100%",
-          end: "top 60%",
+          start: "top 80%",
+          end: "top 50%",
           toggleActions: "play none none none",
         },
       }
@@ -174,13 +174,16 @@ const ProjectsDemo = () => {
 
       <div className="slide-project slide-rideau h-screen flex justify-center items-center bg-[#0f0f0f] text-white overflow-hidden relative">
         <div className="rideau-content text-center">
-          <h2>Explorez Mes Projets En Détails</h2>
-          <p>
-            Découvrez mes réalisations en tant que développeur web junior en
-            freelance / autodidacte.
-          </p>
+          <div className="project-redirect-container">
+            <h2>Explorez Mes Projets En Détails .. </h2>
+            <p>
+              Découvrez mes réalisations en tant que développeur web junior en
+              freelance / autodidacte.
+            </p>
+          </div>
+          <div className="separation-container"></div>
           <NavLink
-            to="/Projects"
+            to="/projects"
             className="mt-6 inline-block px-6 py-3 text-white font-semibold border border-white border-[0.5px] shadow-sm hover:bg-gray-200 hover:text-black transition"
           >
             Explorer Mes Projets

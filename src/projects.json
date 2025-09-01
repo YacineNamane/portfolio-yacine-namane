@@ -4,55 +4,95 @@
     "title": "utopiadreams",
     "imageSrc": "https://raw.githubusercontent.com/YacineNamane/utopiadreams/master/src/assets/UDImages/UtopiaDreams.png",
     "description": "J'ai développé UtopiaDreams, un site web de fonds d'écran mobile, entièrement réalisé en React.js. Ce projet s’est concentré sur une expérience utilisateur fluide et réactive, en offrant une interface moderne et un accès à des fonds d'écran de qualité.",
-    "githubLink": "https://utopiadreams.art/"
+    "githubLink": "https://utopiadreams.art/",
+    "tags": [
+      { "label": "React", "color": "red" },
+      { "label": "Frontend", "color": "blue" },
+      { "label": "SEO", "color": "purple" }
+    ]
   },
   {
     "id": 7,
     "title": "Anna Perla",
     "imageSrc": "https://raw.githubusercontent.com/YacineNamane/Personnel-usage/master/src/assets/images/LogoAP.png",
     "description": "J'ai développé un site web complet pour un client, incluant un espace administrateur sécurisé et un blog dynamique. Le projet a été réalisé de A à Z, en intégrant une architecture robuste et une gestion avancée des droits d'accès.",
-    "githubLink": "https://github.com/YacineNamane/Personnel-usage"
+    "githubLink": "https://github.com/YacineNamane/Personnel-usage",
+    "tags": [
+      { "label": "React", "color": "red" },
+      { "label": "Node", "color": "green" },
+      { "label": "MongoDB", "color": "#89fb89" }
+    ]
   },
   {
     "id": 8,
     "title": "winlytics Draft lol",
     "imageSrc": "https://raw.githubusercontent.com/YacineNamane/winlytics-draft-lol/main/src/assets/WDL.png",
     "description": "Winlytics Draft est un outil d’analyse de draft pour League of Legends qui calcule le taux de victoire moyen d’une équipe en fonction des champions sélectionnés. En s’appuyant sur l’API de Riot, il fournit des statistiques en temps réel sur les probabilités de victoire, aidant ainsi les joueurs à prendre de meilleures décisions stratégiques et à optimiser leurs compositions d’équipe.",
-    "githubLink": "https://github.com/YacineNamane/winlytics-draft-lol"
+    "githubLink": "https://github.com/YacineNamane/winlytics-draft-lol",
+    "tags": [
+      { "label": "React", "color": "red" },
+      { "label": "RTK", "color": "yellow" },
+      { "label": "SPA", "color": "aliceblue" }
+    ]
   },
   {
     "id": 1,
     "title": "Kasa",
     "imageSrc": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/Logo.png",
     "description": " Développement d'une application web SPA (Kasa) ,qui est dans le métier de la location d’appartements entre particuliers ,avec React , React Rooter , Sass .",
-    "githubLink": "https://github.com/YacineNamane/Kasa"
+    "githubLink": "https://github.com/YacineNamane/Kasa",
+    "tags": [
+      { "label": "React", "color": "red" },
+      { "label": "Scss", "color": "yellow" },
+      { "label": "Responsive", "color": "#e344e3" }
+    ]
   },
   {
     "id": 2,
     "title": "Mon Vieux Grimmoire",
     "imageSrc": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/vieuxgrimmoire.png",
     "description": "Développement du Back-end  d'un site de notation de livres ( Mon vieux Grimmoire ) et réalisation sécurisée des opérations CRUD avec NodeJS .",
-    "githubLink": "https://github.com/YacineNamane/Mon-Vieux-Grimoire"
+    "githubLink": "https://github.com/YacineNamane/Mon-Vieux-Grimoire",
+    "tags": [
+      { "label": "Node", "color": "green" },
+      { "label": "MongoDB", "color": "#89fb89" },
+      { "label": "API", "color": "#e344e3" }
+    ]
   },
   {
     "id": 3,
     "title": "Booki",
     "imageSrc": "https://raw.githubusercontent.com/YacineNamane/Booki/main/images/logo/Booki.png",
     "description": "Mise en place de la page d'accueil d'une agence de voyage ( Booki ) avec HTML & CSS . ",
-    "githubLink": "https://github.com/YacineNamane/Booki"
+    "githubLink": "https://github.com/YacineNamane/Booki",
+    "tags": [
+      { "label": "HTML", "color": "white" },
+      { "label": "CSS", "color": "#67f1ff" },
+      { "label": "Responsive", "color": "#e344e3" }
+    ]
   },
   {
     "id": 4,
     "title": "Nina Carducci",
     "imageSrc": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/portfolio.png",
     "description": "Débugage et optimisation du portfolio d'une photographe. En s'appuyant sur le rapport de l’audit ,j'ai retravaillé l'accessibilité, la SEO, les perfermances du site ainsi que la résolution de certains bugs liés aux fonctionnalités du site.",
-    "githubLink": "https://github.com/YacineNamane/Nina-Carducci"
+    "githubLink": "https://github.com/YacineNamane/Nina-Carducci",
+    "tags": [
+      { "label": "SEO", "color": "white" },
+      { "label": "Lighthouse", "color": "pink" },
+      { "label": "Portfolio", "color": "white" }
+    ]
   },
   {
     "id": 5,
     "title": "Sophie Bluel",
     "imageSrc": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/portfolio.png",
     "description": "Développement du front-end du portfolio d'une cliente, implémentation d'un formulaire de connexion, création d'une modale pour la gestion de la galerie, et prise en charge des différents événements avec HTML, CSS et JS.",
-    "githubLink": "https://github.com/YacineNamane/Sophie-Bluel"
+    "githubLink": "https://github.com/YacineNamane/Sophie-Bluel",
+    "tags": [
+      { "label": "JS", "color": "yellow" },
+      { "label": "JWT", "color": "#67f1ff" },
+      { "label": "Portfolio", "color": "white" }
+    ]
   }
 ]

@@ -40,7 +40,7 @@ function Banner() {
               transition: "all 0.3s ease-in-out",
             })}
           >
-            <span>Projets</span>
+            <span>Projects</span>
           </NavLink>
           <NavLink
             to="/contact"
@@ -56,7 +56,7 @@ function Banner() {
       <div className="flex justify-center items-center w-full bg-[#121212] py-4 gap-6 h-17p">
         <div className="w-5 h-5 flex items-center justify-center hover:scale-110 transition-transform duration-300">
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/namane-yacine-542398252"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -70,7 +70,7 @@ function Banner() {
 
         <div className="w6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
           <a
-            href="https://twitter.com"
+            href="https://x.com/UtopiaDrea42952"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -84,7 +84,7 @@ function Banner() {
 
         <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
           <a
-            href="https://github.com"
+            href="https://github.com/YacineNamane"
             target="_blank"
             rel="noopener noreferrer"
           >

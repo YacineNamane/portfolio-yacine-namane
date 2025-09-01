@@ -28,7 +28,7 @@ function AnimatedRoutes() {
           }
         />
         <Route
-          path="/Project"
+          path="/project"
           element={
             <PageWrapper>
               <Project />
@@ -36,7 +36,7 @@ function AnimatedRoutes() {
           }
         />
         <Route
-          path="/Projects"
+          path="/projects"
           element={
             <PageWrapper>
               <Projects />
@@ -45,7 +45,7 @@ function AnimatedRoutes() {
         />
 
         <Route
-          path="/About"
+          path="/about"
           element={
             <PageWrapper>
               <About />
@@ -53,7 +53,7 @@ function AnimatedRoutes() {
           }
         />
         <Route
-          path="/Contact"
+          path="/contact"
           element={
             <PageWrapper>
               <Contact />

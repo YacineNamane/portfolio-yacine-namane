@@ -5,7 +5,7 @@ import * as THREE from "three";
 
 export default function SkillsDistortion() {
   useEffect(() => {
-    // --- Préloader -----------------------------------------------------
+    // --- Préloader ---
     const createPreloader = () => {
       const container = document.querySelector(".circle-container");
       const progressBar = document.querySelector(".initializing-progress");
@@ -111,7 +111,7 @@ export default function SkillsDistortion() {
 
     createPreloader();
 
-    // --- Particules d'arrière-plan ------------------------------------
+    // --- Particules d'arrière-plan ---
     const particlesContainer = document.getElementById("particles");
     const particleCount = 80;
     for (let i = 0; i < particleCount; i++) {
@@ -128,7 +128,7 @@ export default function SkillsDistortion() {
       particlesContainer.appendChild(particle);
     }
 
-    // --- Three.js setup ------------------------------------------------
+    // --- Three.js setup ---
     const canvas = document.getElementById("canvas");
     const renderer = new THREE.WebGLRenderer({
       canvas,
@@ -157,7 +157,7 @@ export default function SkillsDistortion() {
     directionalLight.position.set(0, 1, 1);
     scene.add(directionalLight);
 
-    // --- Slides & settings --------------------------------------------
+    // --- Slides & settings ---
     const slideWidth = 1.5;
     const slideHeight = 0.6;
     const gap = 0.25;
@@ -201,7 +201,7 @@ export default function SkillsDistortion() {
       directionSmoothing: 0.03,
     };
 
-    // --- Slides + Titres (identiques) ---------------------------------
+    // --- Slides + Titres (identiques) ---
     const slides = [];
     let currentPosition = 0;
     let targetPosition = 0;
