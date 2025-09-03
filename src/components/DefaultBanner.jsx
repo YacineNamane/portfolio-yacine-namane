@@ -114,7 +114,7 @@ function DefaultHeader() {
 
         {/* Menu déroulant */}
         {menuOpen && (
-          <div className="absolute top-full right-0 mt-2 w-36 sm:w-40 flex flex-col border border-white p-2 bg-black bg-opacity-80 z-50">
+          <div className="absolute top-full right-0 mt-5 w-36 sm:w-40 flex flex-col border border-white p-2 bg-black bg-opacity-80 z-50">
             <NavLink to="/" onClick={() => setMenuOpen(false)}>
               Home
             </NavLink>

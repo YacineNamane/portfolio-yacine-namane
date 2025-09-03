@@ -259,7 +259,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 200px;
-  width: 40%;
+  width: 70%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -308,5 +308,14 @@ footer {
 
   100% {
     transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skills-title-container {
+    width: 80%;
+  }
+  .skills-title-container h2 {
+    font-size: 1.9em !important;
   }
 }

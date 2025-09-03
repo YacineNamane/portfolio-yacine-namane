@@ -2,57 +2,69 @@
   "proSkills": [
     {
       "name": "html",
-      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/html.png"
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/html.svg"
     },
     {
       "name": "css",
-      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/css.png"
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/css.svg"
     },
     {
       "name": "js",
-      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/js.png"
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/js.svg"
     },
     {
       "name": "react",
-      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/react.png"
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/react.svg"
+    },
+    {
+      "name": "RTK",
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/redux.svg"
+    },
+    {
+      "name": "Bootstrap",
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/bootstrap.svg"
     },
     {
       "name": "Sass",
-      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/sass.png"
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/sass.svg"
+    },
+    {
+      "name": "Tailwind",
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/tailwind.svg"
     },
     {
       "name": "nodeJS",
-      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/nodejs.png"
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/nodejs.svg"
     },
     {
       "name": "mongoDB",
-      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/mongodb.png"
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/mongodb.svg"
     },
     {
       "name": "git",
-      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/git.png"
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/git.svg"
     }
   ],
   "tools": [
     {
       "name": "github",
-      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/github.png"
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/github.svg"
     },
     {
       "name": "vcs",
-      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/vsc.png"
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/vsc.svg"
     },
     {
       "name": "AI Tools",
-      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/chatgpt.png"
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/AIT.svg"
     },
     {
       "name": "litghouse",
-      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/lighthouse.png"
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/lighthouse.svg"
     },
     {
       "name": "postman",
-      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio/master/portfolio/src/images/postman.png"
+      "logo": "https://raw.githubusercontent.com/YacineNamane/portfolio-yacine-namane/main/src/images/postman.svg"
     }
   ]
 }

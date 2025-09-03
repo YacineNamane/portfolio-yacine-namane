@@ -640,42 +640,63 @@ h3 {
   .default-header {
     width: 100%;
   }
+  .text-en-boucle {
+    padding-left: 26%;
+  }
+  h1 {
+    font-size: 2em !important ;
+  }
+  .banner {
+    width: 23%;
+  }
+  .contact-form textarea {
+    width: 370px;
+  }
+  .slide-project .image-wrapper img {
+    max-width: 15vw;
+    width: auto;
+  }
+  .text p {
+    font-size: 0.8rem;
+  }
+  .text h2 {
+    font-size: 2.2rem;
+  }
+  .text {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .default-header {
-    padding: 0 20px;
+    padding: 0 10px;
 
     width: 100%;
   }
   .dbl-secction img {
     height: 35px;
   }
-  .banner {
-    flex-direction: column;
-    gap: 20px;
+
+  .text-en-boucle {
+    padding-left: 0;
   }
-  .banner nav {
-    display: flex;
-    gap: 35px;
+
+  h1 {
+    font-size: 1.8em !important;
   }
-  .banner h2 {
-    font-size: 2.2em;
-    padding-left: 0px;
+  .type-container {
+    padding: 30px;
   }
+
   .home-section {
     flex-direction: column;
-    height: 648px;
     padding-top: 290px;
     margin: 0px;
   }
-  .floating-image-container {
-    width: 175px;
-    height: 175px;
+  .idea-section button {
+    padding: 12px 8px;
   }
-  .Typewriter {
-    font-size: 0.7em;
-  }
+
   .projects {
     flex-direction: column;
     width: 100%;
@@ -702,49 +723,7 @@ h3 {
   .projects-container h2 {
     font-size: 2em;
   }
-  .compétence-section {
-    width: 95%;
-  }
-  .div-skill {
-    margin: 10px;
-  }
-  /* banner mobile */
 
-  .banner {
-    display: none;
-  }
-
-  .banner-mobile {
-    background-color: #181a27 !important;
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 75px;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-  }
-  .banner-mobile nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-  }
-  .nav-mobile-part {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-  }
-  .banner-mobile h2 {
-    font-size: 2.4em;
-    color: #5c6ac4;
-  }
-  .banner-mobile.expanded nav {
-    background-color: #181a27 !important;
-  }
   .apropos-header {
     flex-direction: column;
     align-items: center;
@@ -769,6 +748,19 @@ h3 {
     max-width: 600px;
     margin: 0 auto;
   }
+  .motivation-section {
+    display: none;
+  }
+
+  #from-container {
+    width: 100%;
+  }
+  #from-container div {
+    width: 100%;
+  }
+  #from-container button {
+    margin-left: 0;
+  }
 
   .contact-form input,
   .contact-form textarea {
@@ -790,8 +782,5 @@ h3 {
   }
   .mail-contact h2 {
     font-size: 1.2em;
-  }
-  .skills-container {
-    background-size: cover;
   }
 }
