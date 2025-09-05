@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import emailjs from "emailjs-com";
-import YNLogo from "../images/LogoYN.webp";
+import YNLogo from "../images/LogoYN.png";
 
 function DefaultHeader() {
   const form = useRef();

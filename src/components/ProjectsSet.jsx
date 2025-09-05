@@ -6,6 +6,7 @@ import projectsData from "../projects.json";
 function ProjectsSet() {
   return (
     <Container fluid className="projects-container" id="projects">
+      <h2>Projets Réalisés ..</h2>
       <div className="projects-grid">
         {projectsData.map((project) => (
           <div key={project.id} className="project-card">

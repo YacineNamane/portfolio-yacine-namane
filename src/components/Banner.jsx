@@ -96,6 +96,9 @@ function Banner() {
           </a>
         </div>
       </div>
+      <div className="rights-container">
+        <span>© 2026 Yacine Namane | Tous droits réservés.</span>
+      </div>
     </div>
   );
 }

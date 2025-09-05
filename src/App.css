@@ -27,7 +27,9 @@ body {
 
 /* Logo */
 .dbl-secction img {
-  height: 45px;
+  height: 50px;
+  border: 2px solid #ffffff7a;
+  border-radius: 35px;
 }
 
 /* Formulaire central */
@@ -74,7 +76,7 @@ body {
   justify-content: center;
 }
 
-/* Menu à droite */
+/* Menu  */
 .menu-section {
   display: flex;
   align-items: center;
@@ -154,6 +156,17 @@ body {
 .banner nav a span:hover {
   color: #f7f7f7e6 !important;
   transform: scale(1.05);
+}
+.rights-container {
+  background: #121212;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.rights-container span {
+  font-size: 0.45em;
+  font-weight: 300;
+  color: rgb(147 147 147 / 86%);
 }
 .svg-inline--fa {
   height: 0.9em;
@@ -289,6 +302,11 @@ h1 {
 }
 
 .text h2 {
+  margin: 0;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #f944ea, #a75af1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
   margin-bottom: 15px;
   text-align: left;
@@ -376,6 +394,20 @@ h1 {
 .animate {
   opacity: 0;
   transform: translateY(50px);
+}
+
+.projects-container h2 {
+  font-size: 2.3em;
+  font-weight: 600;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #f944ea, #a75af1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Footer */
@@ -665,6 +697,18 @@ h3 {
   .text {
     width: 40%;
   }
+  .project-redirect-container {
+    width: 80%;
+  }
+  .rideau-content h2 {
+    font-size: 2.1em;
+  }
+  .rideau-content p {
+    font-size: 2.3em;
+  }
+  .rideau-content a {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -672,9 +716,6 @@ h3 {
     padding: 0 10px;
 
     width: 100%;
-  }
-  .dbl-secction img {
-    height: 35px;
   }
 
   .text-en-boucle {
@@ -695,6 +736,14 @@ h3 {
   }
   .idea-section button {
     padding: 12px 8px;
+  }
+  .project-overlay {
+    align-items: flex-start;
+    justify-content: flex-end;
+    opacity: 1;
+  }
+  .project-img {
+    width: 35%;
   }
 
   .projects {
@@ -781,6 +830,22 @@ h3 {
     margin-left: 10%;
   }
   .mail-contact h2 {
+    font-size: 1.2em;
+  }
+
+  .slide-project .image-wrapper img {
+    max-width: 17vw;
+  }
+  .text p {
+    font-size: 0.7rem;
+  }
+  .text h2 {
+    font-size: 1.5rem;
+  }
+  .rideau-content p {
+    font-size: 1.5em;
+  }
+  .rideau-content h2 {
     font-size: 1.2em;
   }
 }
